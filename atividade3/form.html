@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        .azul{
+            background-color: rgb(148, 208, 236);
+        }
+        .status{
+            margin-left: 700px;
+        }
+        .margem{
+            margin-left: 50px;
+        }
+        .separado{
+            margin-left: 900px;
+        }
+        .sep{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color: azure;">Manutenção do órgão colegiado</h1>
+    <table  style="width: 1000px;" border="1">
+        <tr>
+            <td class="azul"><b>Unidade</b></td>
+            <td>Faculdade de Engenharia de Ilha solteira</td>
+        </tr>
+        <tr>
+            <td class="azul"><b>Tipo Colegiado</b></td>
+            <td>Congregação</td>
+        </tr>
+    </table>
+    <br><br>
+    <fieldset>
+
+        <h1 class="azul">Órgão Colegiado</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" value="Congregação da Faculdade de Ilha solteira" size="100"><br><br>
+            <label for="sigla">Sigla</label>
+            <input type="text" name="sigla" id="sigla" value="CFIS"><br><br>
+            <label for="data">Data de Ativação</label>
+            <input type="date" name="data" id="data">
+            <label for="status" class="status">status</label>
+            <select name="status" id="status" class="margem">
+                <option value="Ativado">Ativado</option>
+                <option value="Desativado">Desativado</option>
+            </select>
+            <br><br>
+            <label for="dataDesat" class="separado">Data Desativação</label>
+            <input type="date" name="datadesat" id="desativado" class="sep"><br>
+            <label for="Órgão-origin">Órgão de Origem</label>
+            <input type="text" name="orgao-ori" id="ori" size="100">
+            <button>Buscar</button><br><br>
+            <label for="Órgão-Sup">Órgão Superior</label>
+            <input type="text" name="orgao-sup" id="sup" size="102">
+            <button>Buscar</button><br><br>
+            <label for="Documentação" >Documentação</label>
+            <textarea name="documentacao" id="doc" cols="50" rows="10">Orgão criado com o objetivo de aprovar normas da unidade.</textarea>
+            <br><br>
+            <input type="submit" value="Salvar">
+            <button style="margin-left: 900px;">Excluir</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>

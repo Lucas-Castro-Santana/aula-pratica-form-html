@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="/form.html" method="POST">
+        <h1>Dados Pessoais</h1>
+        <label for="Name">Name:</label>
+        <input type="text" id="nome" value="">
+        <br>
+        <br>
+        <label for="idade">idade</label>
+        <input type="number" id="number" value="">
+        <br><br>
+        <p>Dados profissionais</p>
+        <br>
+        <label for="escolaridade">escolaridade:</label>
+        <select id="escolaridade">
+            <option value="Fundamental">Fundamental</option>
+            <option value="Ensino Medio">Ensino Medio</option>
+            <option value="Ensino superior completo">Ensino superior completo</option>
+        </select>
+        <br><br>    
+        <input type="radio" name="A_atuacao" id="gerencia">
+        <label for="cargo">Gerência</label>
+        <input type="radio" name="A_atuacao" id="financeiro">
+        <label for="cargo">Financeiro</label>
+        <input type="radio" name="A_atuacao" id="recepcao">
+        <label for="cargo">Recepcão</label>
+    </form>
+</body>
+</html>
